@@ -2,6 +2,15 @@
 
 language: c
 
+os:
+  - linux
+
+env:
+  - TZ=Europe/Vienna
+  - TZ=Europe/London
+  - TZ=US/Pacific
+  - TZ=Etc/UTC
+
 sudo: required
 
 dist: trusty
@@ -23,11 +32,8 @@ after_failure:
 
 after_success:
   - ./run.sh coverage
-   
+
 notifications:
   email:
     on_success: change
     on_failure: change
-
-    
-
