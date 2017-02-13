@@ -1,6 +1,6 @@
 # Run Travis CI for R using https://eddelbuettel.github.io/r-travis/
 
-language: c
+language: objective-c
 
 os:
   - linux
