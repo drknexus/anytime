@@ -1,0 +1,8 @@
+now <- Sys.time()
+library(anytime)
+print(now)
+print(as.character(now))
+print(anytime(now))
+print(as.character(anytime(now)))
+stopifnot(as.character(anytime(as.character(now))) == as.character(now))
+stopifnot(anytime(now) == now)
